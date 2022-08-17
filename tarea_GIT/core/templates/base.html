@@ -1,13 +1,25 @@
-{% extends 'herencia/base.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Prueba</title>
+	 {% load static %}
+	 <link rel="stylesheet" href="{% static 'core/css/menuUniverso.css' %}">
 </head>
 <body>
 
+<div class="nav">
+  <nav class="menuCSS3">
+		<ul>
+			<li><a href="{% url 'base' %}">INICIO</a></li>
+			<li><a href="{% url 'hijo' %}">PAGINA DE HERENCIA</a></li>
+		</ul>
+	</nav>
+</div>
 
+{% block body %}
+
+{% endblock %}
 
 </body>
 </html>

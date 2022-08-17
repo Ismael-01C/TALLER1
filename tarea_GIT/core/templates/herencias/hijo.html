@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+ {% for portal in Ports %}
+
+   <div>
+        <p>{{ portal.Contenido }}</p>
+
+        <img src="{{ portal.Imagen.url }}" alt="Logan" width="600" height="600">
+
+   </div>
+    {% endfor %}
+{% endblock %}

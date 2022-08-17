@@ -7,3 +7,6 @@ class Persona(models.Model):
     Imagen = models.ImageField(upload_to="projects")
     fechacreacion = models.DateTimeField(auto_now_add=True)
     fechamodificacion = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.Titulo
